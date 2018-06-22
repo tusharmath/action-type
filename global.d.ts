@@ -1,4 +1,4 @@
 interface Action<T> {
-  type: string
+  type: string | number
   value: T
 }
