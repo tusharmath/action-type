@@ -1,3 +1,5 @@
+/// <reference path="global.d.ts" />
+
 import { curry2 } from 'ts-curry'
 
 class DAction<T> implements Action<T> {
