@@ -1,4 +1,4 @@
-# Action-Type
+# Action-Type [![Build Status](https://travis-ci.com/tusharmath/action-type.svg?branch=master)](https://travis-ci.com/tusharmath/action-type)
 
 Type class specification for actions.
 
@@ -8,10 +8,10 @@ Type class specification for actions.
 - [Usage](#usage)
 - [API](#api)
   - [action](#action)
-  - [isAction](<#isaction(-)>)
+  - [isAction](#isaction)
   - [Nil](#nil)
-  - [List](<#list(-)>)
-  - [isList](<#islist(-)>)
+  - [List](#list)
+  - [isList](#islist)
 - [Related Libraries](#related-libraries)
 
 # Specification
@@ -46,7 +46,7 @@ action('click', {x: 10, y: 20})
 action('click')({x: 10, y: 20}) // curried version
 ```
 
-## isAction( )
+## isAction
 
 A utility function that detects if the object is of `Action` type.
 
@@ -71,7 +71,7 @@ function logic(a: number) {
 }
 ```
 
-## List( )
+## List
 
 A utility function that creates an `Action` from a list of `Action[]`.
 
@@ -81,7 +81,7 @@ import {List} from 'action-type'
 const list = List(action('A', 1), action('B', 2))
 ```
 
-## isList( )
+## isList
 
 A utility function that checks if the action is of list type
 
