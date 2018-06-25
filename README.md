@@ -1,6 +1,12 @@
 # Action-Type
 Type class for actions.
 
+# Specification
+1. An `Action` consists of two properties viz. `type` and `value`.
+2. `action.type` is of type `string` or `number`.
+3. `action.value` is of type `any`. It could also be of type `Action`
+4. The object is an immutable and should never be updated.
+
 # Usage
 An action is an object which contains two properties — `type` and `value`.
 
