@@ -95,5 +95,7 @@ isList(list) //true
 
 # Related Libraries
 
-- [Hoe](https://github.com/tusharmath/hoe) An action emitter library for the DOM.
-- [Update Function Types](https://github.com/tusharmath/update-function-types) Utilities for doing more complex operations based on `Action` and some `State`
+| Project                                                                      | Description                                                                    |
+| :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------- |
+| [Hoe](https://github.com/tusharmath/hoe)                                     | An action emitter library for the DOM.                                         |
+| [Update Function Types](https://github.com/tusharmath/update-function-types) | Utilities for doing more complex operations based on `Action` and some `State` |
