@@ -10,6 +10,8 @@ Type class specification for actions.
   - [action](#action)
   - [isAction](<#isaction(-)>)
   - [Nil](#nil)
+  - [List](<#list(-)>)
+  - [isList](<#islist(-)>)
 - [Related Libraries](#related-libraries)
 
 # Specification
@@ -67,6 +69,28 @@ function logic(a: number) {
   if (a < 10) return action('lesser', 10 - a)
   return Nil
 }
+```
+
+## List( )
+
+A utility function that creates an `Action` from a list of `Action[]`.
+
+```ts
+import {List} from 'action-type'
+
+const list = List(action('A', 1), action('B', 2))
+```
+
+## isList( )
+
+A utility function that checks if the action is of list type
+
+```ts
+import {isList} from 'action-type'
+
+const list = List(action('A', 1), action('B', 2))
+
+isList(list) //true
 ```
 
 # Related Libraries
