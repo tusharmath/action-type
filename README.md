@@ -34,3 +34,16 @@ import {isAction} from 'action-type'
 isAction({}) // returns false
 isAction(action('WWW', null)) // returns true
 ```
+
+## Nil
+A default action that represents nothingness.
+
+```ts
+import {Nil} from 'action-type'
+
+function logic (a: number) {
+    if(a > 10) return action('greater', a - 10)
+    if(a < 10) return action('lesser', 10 - a)
+    return Nil
+}
+``` 
