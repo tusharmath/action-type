@@ -4,4 +4,4 @@
 
 import {action} from './action'
 
-export const Nil = action('@@NIL', null)
+export const Nil = action('@@NIL', {})
