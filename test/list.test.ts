@@ -4,8 +4,7 @@
 
 import * as assert from 'assert'
 import {describe, it} from 'mocha'
-import {List, action} from '../'
-import {isList} from '../src/list'
+import {List, action, isList} from '../'
 
 describe('list', () => {
   it('should return true if the obj is a List', () => {
