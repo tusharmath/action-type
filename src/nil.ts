@@ -4,4 +4,4 @@
 
 import {action} from './action'
 
-export const Nil = action('@@NIL', {})
+export const Nil = action<any>('@@NIL', {})
