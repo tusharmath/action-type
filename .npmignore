@@ -3,3 +3,7 @@
 !*.js
 *.tgz
 test/
+.idea/
+.prettierrc
+*.yml
+*.lock

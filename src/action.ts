@@ -15,4 +15,10 @@ export const action: {
   return new DAction(type, value)
 })
 
+export interface Action<T> {
+  type: string | number
+  value: T
+}
+
+
 export const isAction = (obj: any): obj is Action<any> => obj instanceof DAction
