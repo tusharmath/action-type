@@ -93,6 +93,18 @@ const list = List(action('A', 1), action('B', 2))
 isList(list) //true
 ```
 
+## isNil
+
+A utility function that checks if the action is of `Nil`
+
+```ts
+import {isNil, Nil} from 'action-type'
+
+isNil(Nil) // true
+isNil({type: '@@NIL', value: {}}) // true
+isNil({type: 'click', value: {}}) // false
+```
+
 # Related Libraries
 
 | Project                                                                      | Description                                                                    |
