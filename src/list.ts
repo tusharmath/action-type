@@ -2,7 +2,8 @@
  * Created by tushar on 25/06/18
  */
 
-import {Action, action, isAction} from './action'
+import {Action, action} from './action'
+import {isAction} from './isAction'
 
 const LIST_ACTION_TYPE = '@@LIST'
 export const List = <T>(...actions: Array<Action<T>>) => {
