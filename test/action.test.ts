@@ -32,4 +32,12 @@ describe('isAction', () => {
     const actual = isAction({type: 'WONDER', value: {count: 10}})
     assert.ok(actual)
   })
+
+  it('should return false for primitive values', () => {
+    assert.ok(!isAction(null))
+    assert.ok(!isAction(undefined))
+    assert.ok(!isAction(false))
+    assert.ok(!isAction(0))
+    assert.ok(!isAction(true))
+  })
 })
