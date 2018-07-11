@@ -9,7 +9,9 @@ export const NIL_TYPE = '@@NIL'
 
 /**
  * Returns a Nil object
- * @constant
- * @type {Action}
+ * @function
+ * @returns {Action}
  */
-export const Nil = action<any>(NIL_TYPE, {})
+export function Nil() {
+  return action<any>(NIL_TYPE, {})
+}
