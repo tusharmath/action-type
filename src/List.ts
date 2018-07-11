@@ -1,5 +1,5 @@
 import {Action, action} from './action'
-import {Nil} from './nil'
+import {Nil} from './Nil'
 import {isNil} from './isNil'
 
 /**
