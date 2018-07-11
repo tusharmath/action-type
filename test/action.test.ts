@@ -21,8 +21,8 @@ describe('action', () => {
     assert.deepEqual(actual, expected)
   })
 
-  it.skip('should ignore Nil values', () => {
-    const actual = action('WIND', Nil)
+  it('should ignore Nil values', () => {
+    const actual = action('WIND', Nil())
     assert.ok(isNil(actual))
   })
 })

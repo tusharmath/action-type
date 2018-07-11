@@ -1,4 +1,5 @@
 import {curry2} from 'ts-curry'
+import {isNil} from './isNil'
 
 /**
  * Interface for Action
@@ -10,7 +11,7 @@ export interface Action<T> {
 }
 
 function createAction<T>(type: string | number, value: T) {
-  return {type, value}
+  return isNil(value) ? value : {type, value}
 }
 
 /**
