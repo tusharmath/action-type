@@ -2,6 +2,18 @@
 
 Type class specification for actions.
 
+# Index
+
+- [Ecosystem](#ecosystem)
+- [Specification](#specification)
+- [Action](#action-type)
+- [API](#api)
+  - [action](#action)
+  - [isAction](#isaction)
+  - [Nil](#nil)
+  - [List](#list)
+  - [isList](#islist)
+- [Related Libraries](#related-libraries)
 
 # Ecosystem
 
@@ -16,19 +28,6 @@ Type class specification for actions.
 [update function types]: https://github.com/tusharmath/update-function-types
 [match action]: https://github.com/tusharmath/match-action
 [action component]: https://github.com/tusharmath/action-component
-
-
-# Index
-
-- [Specification](#specification)
-- [Action](#action-type)
-- [API](#api)
-  - [action](#action)
-  - [isAction](#isaction)
-  - [Nil](#nil)
-  - [List](#list)
-  - [isList](#islist)
-- [Related Libraries](#related-libraries)
 
 # Specification
 
