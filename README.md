@@ -2,10 +2,26 @@
 
 Type class specification for actions.
 
+
+# Ecosystem
+
+| Project                 | Description                                                                    |
+| :---------------------- | :----------------------------------------------------------------------------- |
+| [Hoe]                   | An action emitter library for the DOM.                                         |
+| [Update Function Types] | Utilities for doing more complex operations based on `Action` and some `State` |
+| [Match Action]          | Switch-case for Actions                                                        |
+| [Action Component]      | A library to create components with `Action` and `State`                       |
+
+[hoe]: https://github.com/tusharmath/hoe
+[update function types]: https://github.com/tusharmath/update-function-types
+[match action]: https://github.com/tusharmath/match-action
+[action component]: https://github.com/tusharmath/action-component
+
+
 # Index
 
 - [Specification](#specification)
-- [Usage](#usage)
+- [Action](#action-type)
 - [API](#api)
   - [action](#action)
   - [isAction](#isaction)
@@ -21,7 +37,7 @@ Type class specification for actions.
 3.  `action.value` is of type `any`. It could also be of type `Action`
 4.  The object is an immutable and should never be updated.
 
-# Usage
+# Action Type
 
 An action is an object which contains two properties — `type` and `value`.
 
@@ -104,17 +120,3 @@ isNil(Nil) // true
 isNil({type: '@@NIL', value: {}}) // true
 isNil({type: 'click', value: {}}) // false
 ```
-
-# Related Libraries
-
-| Project                 | Description                                                                    |
-| :---------------------- | :----------------------------------------------------------------------------- |
-| [Hoe]                   | An action emitter library for the DOM.                                         |
-| [Update Function Types] | Utilities for doing more complex operations based on `Action` and some `State` |
-| [Match Action]          | Switch-case for Actions                                                        |
-| [Action Component]      | A library to create components with `Action` and `State`                       |
-
-[hoe]: https://github.com/tusharmath/hoe
-[update function types]: https://github.com/tusharmath/update-function-types
-[match action]: https://github.com/tusharmath/match-action
-[action component]: https://github.com/tusharmath/action-component
