@@ -107,8 +107,14 @@ isNil({type: 'click', value: {}}) // false
 
 # Related Libraries
 
-| Project                                                                      | Description                                                                    |
-| :--------------------------------------------------------------------------- | :----------------------------------------------------------------------------- |
-| [Hoe](https://github.com/tusharmath/hoe)                                     | An action emitter library for the DOM.                                         |
-| [Update Function Types](https://github.com/tusharmath/update-function-types) | Utilities for doing more complex operations based on `Action` and some `State` |
-| [Match Action](https://github.com/tusharmath/match-action)                   | Switch Case for Actions                                                        |
+| Project                 | Description                                                                    |
+| :---------------------- | :----------------------------------------------------------------------------- |
+| [Hoe]                   | An action emitter library for the DOM.                                         |
+| [Update Function Types] | Utilities for doing more complex operations based on `Action` and some `State` |
+| [Match Action]          | Switch-case for Actions                                                        |
+| [Action Component]      | A library to create components with `Action` and `State`                       |
+
+[hoe]: https://github.com/tusharmath/hoe
+[update function types]: https://github.com/tusharmath/update-function-types
+[match action]: https://github.com/tusharmath/match-action
+[action component]: https://github.com/tusharmath/action-component
