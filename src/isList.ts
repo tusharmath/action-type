@@ -8,6 +8,6 @@ import {Action} from './action'
  * @param {any} obj
  * @returns {boolean}
  */
-export function isList(obj: any): obj is Action<Array<any>> {
+export function isList(obj: any): obj is Action<Array<Action<any>>> {
   return isAction(obj) && obj.type === LIST_ACTION_TYPE
 }
