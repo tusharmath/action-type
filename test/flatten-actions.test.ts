@@ -1,5 +1,5 @@
 import {Action, action} from '../src/action'
-import {flattenActions} from '../src/flatten-action'
+import {flattenActions} from '../src/flatten-actions'
 import {List} from '../src/List'
 import * as assert from 'assert'
 import {Nil} from '../src/Nil'

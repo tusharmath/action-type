@@ -5,8 +5,8 @@ import {isNil} from './isNil'
 
 /**
  * Flattens a nested action
- * @param {Action<T>} _action
- * @return {Array<Action<T>>}
+ * @param {Action} _action
+ * @return {Array<Action>}
  */
 
 export const flattenActions = <T>(_action: Action<T>): Array<Action<T>> => {
